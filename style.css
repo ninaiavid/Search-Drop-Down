@@ -1,0 +1,131 @@
+body {
+    background-color: #d9dadf;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header img {
+   display: block;
+   margin: auto;
+   padding-top: 80px;
+}
+
+form {
+    text-align: center;
+    padding: 5px;
+}
+
+form input {
+    width: 400px;
+    padding: 10px 40px;
+    border-radius: 40px;
+    background-image: url(icons/search.svg), url(icons/googlemic_clr_24px.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center, 446px center;
+    outline: none;
+    box-shadow: 0 1px 6px 0  #b3b3b3;
+    border: 0;
+}
+
+form input:focus {
+    border-radius: 10px 10px 0 0;
+}
+
+form ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    background-color: white;
+    width: 480px;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    display: none;
+}
+
+form input:focus+ul {
+    display: block;
+}
+
+form ul li {
+    padding: 10px 10px;
+    padding-left: 40px;
+    background-image: 
+    linear-gradient(#ffffffb8,#ffffffb8),    
+    url(icons/icon_clock.svg);
+    color: #737373;
+    font-size: 14px;
+    background-size: 20px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+
+.clear {
+    display: block;
+    float: right;
+    visibility: hidden;
+    margin-top: -3px;
+}
+
+.clear img {
+    display: block;
+}
+
+form ul li:hover {
+    background-color:  #cccccc;
+}
+
+form ul li:hover .clear {
+    visibility: visible;
+}
+
+.clear:hover {
+    background-color: #999999;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+footer ul li img {
+    width: 18px;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: #999999;
+    margin: 12px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #404040;
+    font-size: 10px;
+}
+
+footer ul li:hover .more_options{
+        opacity: 1;
+}
+
+footer ul li:hover {
+    background-color: #bfbfbf;
+    cursor: pointer;
+}
+
+.more_options {
+    width: 15px;
+    padding: 3px;
+    transform: translateX(33px) translateY(-84px);
+    background-color: #bfbfbf;
+    opacity: 0;
+}
+
+.more_options:hover {
+    background-color: #999999;
+}
