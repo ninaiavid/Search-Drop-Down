@@ -87,6 +87,10 @@ footer {
     margin-top: 20px;
 }
 
+footer ul {
+    padding-left: 0;
+}
+
 footer ul li {
     list-style: none;
     display: inline-block;
